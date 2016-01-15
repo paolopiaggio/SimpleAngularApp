@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Scripts.Render("~/bundles/angularjs")
+    <title>Simple Angular App</title>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="PasswordController">
+        <form>
+            <label for="password">Password</label>
+            <input type="password" id="password" ng-model="password" />                
+        </form>        
+        <div id="grade">{{ strength }}</div>
+    </div>
+    @Scripts.Render("~/bundles/myApp")
+</body>
+</html>
